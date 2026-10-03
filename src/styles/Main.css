@@ -1,0 +1,120 @@
+.container{
+    background:#000;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 10fr;
+    gap: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-inline: 1vh;
+    gap: 20px;
+    h1{
+        background: #17351C;
+        padding: 5px;
+        width: 3.2vh;
+        text-align: center;
+        border-radius: 8px;
+        color: #62D84E;
+    }
+    p{
+        color: white;
+    }
+}
+.LeftSide{
+    border-right: solid 1px #62D84E;
+}
+.LateralList{
+    display: block;
+    margin: 1vh;
+    li{
+        span{
+            margin-inline: 1vh;
+        }
+        i{
+            color: #62D84E;
+        }
+        margin-top: 2vh;
+        a{
+            text-decoration: none;
+            color: #ddd;
+        }
+    }
+}
+.SubLeftList{
+    ul{
+        color: #ddd;
+        li{
+            margin-top: 1.2vh;
+            cursor: pointer;
+        }
+    }
+}
+.RightSideHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        margin-inline: 1vh;
+        p{
+            color: #ddd;
+        }
+        h1{
+            color: white;
+        }
+        button{
+            padding: 12px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            background: #62D84E;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.Categories{
+    display: flex;
+    gap: 20px;
+    margin-inline: 1vh;
+    div{
+        padding: 13px;
+        background: transparent;
+        border: solid 1px #62D84E;
+        border-radius: 25px;
+        cursor: pointer;
+        color: #ddd;
+    }
+}
+.ListRightSide{
+    margin-inline: 1vh;
+    width: 96.5%;
+    height: 76vh;
+    background: #171C23;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 0.02vh #62D84E;
+    overflow: auto;
+    li{
+        border-bottom: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+            color: white;
+        }
+        p{
+            color: #ddd;
+        }
+        .span{
+            color: rgb(213, 23, 70);
+            padding: 8px;
+            outline: solid 1px rgb(213, 23, 70);
+            font-size: 12px;
+            border-radius: 25px;
+        }
+    }
+}
