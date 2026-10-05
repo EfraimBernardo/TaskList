@@ -1,7 +1,7 @@
 .container{
     background:#000;
     display: grid;
-    height: 100vh;
+    /* height: 100vh; */
     grid-template-columns: 1fr 10fr;
     gap: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -24,7 +24,7 @@
     }
 }
 .LeftSide{
-    border-right: solid 1px #62D84E;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .LateralList{
     display: block;
@@ -83,38 +83,118 @@
     div{
         padding: 13px;
         background: transparent;
-        border: solid 1px #62D84E;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 25px;
         cursor: pointer;
         color: #ddd;
+        transition: 0.5s;
+    }
+    div:hover{
+        background: #62D84E;
+        color: #000;
     }
 }
-.ListRightSide{
+.ListRightSide {
     margin-inline: 1vh;
     width: 96.5%;
     height: 76vh;
     background: #171C23;
     padding: 10px;
     border-radius: 15px;
-    border: solid 0.02vh #62D84E;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: auto;
-    li{
-        border-bottom: inherit;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.ListRightSide li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    transition: 0.25s ease;
+    height: 4.5vh;
+}
+
+.ListRightSide li:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+.ListRightSide li h3 {
+    color: #fff;
+}
+
+.ListRightSide li p {
+    color: #aaa;
+}
+.Form{
+    background: transparent;
+    border: 0 solid #62D84E;
+    padding: 0;
+    margin-inline: 0;
+    width: 0;
+    display: flex;
+    height: 0;
+    border-radius: 0;
+    align-items: center;
+    transition: 0.5s;
+    form{
+        height: 8vh;
+        padding: 0;
+        border-radius: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h3{
-            color: white;
+        transition: 0.5s;
+        input{
+            width: 0;
         }
-        p{
-            color: #ddd;
+        input, select, button{
+            padding: 0;
+            height: 0;
+            border-radius: 8px;
+            outline: 0 solid rgba(255, 255, 255, 0.06);
+            border: none;
+            transition: 0.5s;
         }
-        .span{
-            color: rgb(213, 23, 70);
+        select{
+            margin-inline: 0;
+        }
+    }
+}
+
+.Form.Formulario{
+    background: transparent;
+    border: 1px solid #62D84E;
+    padding: 10px;
+    margin-inline: 1vh;
+    width: 96.5%;
+    display: flex;
+    height: 8vh;
+    border-radius: 15px;
+    align-items: center;
+    form{
+        height: 8vh;
+        padding: 5px 7px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input{
+            width: 45vh;
+            height: 3vh;
+        }
+        input, select, button{
             padding: 8px;
-            outline: solid 1px rgb(213, 23, 70);
-            font-size: 12px;
-            border-radius: 25px;
+            border-radius: 8px;
+            outline: 1px solid rgba(255, 255, 255, 0.06);
+            border: none;
+        }
+        select{
+            margin-inline: 2vh;
+        }
+        select, button{
+            height: 4vh;
         }
     }
 }

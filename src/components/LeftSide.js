@@ -3,7 +3,7 @@ import LeftList from "./LeftSide/LeftList"
 import SubLeftList from "./LeftSide/SubLeftLust"
 import '../styles/Main.css'
 const style = {
-    color: '#62D84E',
+    color: 'rgba(255, 255, 255, 0.08)',
 }
 const LeftSide = () =>{
     return(
